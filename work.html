@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve data from localStorage
+    const project = localStorage.getItem('project');
+    const title = localStorage.getItem('title');
+    const topImage = localStorage.getItem('topImage');
+   
+       console.log('image',topImage)
+       console.log('name',project)
+     
+    // Display the retrieved data
+    const description = localStorage.getItem('description');
+    console.log('title',description)
+    if (project && title && topImage && description) {
+      document.querySelector('#project-title').innerText = title;         // Set project title
+      document.querySelector('#project-number').innerText = project;      // Set project number
+      
+      // document.querySelector('#project-description').innerText = description;            // Set project image
+      document.querySelector('#pro-topImage').src = topImage;             // Set image src
+      
+    } else {
+      console.error('No project data found!');
+    }
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const project = localStorage.getItem('project');
+
+  const desElement = document.getElementById('des');
+  const ss = document.getElementById('screenshot');
+  if (desElement) {
+    if (project == '001') {
+      desElement.innerHTML = `
+        
+         <ul>
+        <li>Payu Money payment gateway integration</li>
+        <li>CRM</li>
+        <li>User-friendly interface</li>
+        <li>Barcode Scanning</li>
+        <li>Voice Search</li>
+        <li>Integrated QR Code</li>
+        <li>Geo-location services</li>
+      </ul>
+        `;
+
+        ss.innerHTML =`<div class="image-container">
+  <div class="image-item">
+    <img src="./assets/images/thirdpartySS.jpg" alt="Screenshot 1" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/thirdpartySS2.jpg" alt="Screenshot 2" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/thirdpartySS3.jpg" alt="Screenshot 3" class="screenshot">
+  </div>
+</div>`
+    } else if (project == '002') {
+      desElement.innerHTML = `
+        <ul>
+        <li>Payu Money payment gateway integration</li>
+        <li>Google Maps integration</li>
+        <li>User-friendly interface</li>
+        <li>Barcode Scanning</li>
+        <li>Voice Search</li>
+        <li>Integrated QR Code</li>
+        <li>Geo-location services</li>
+      </ul>`;
+      ss.innerHTML =`<div class="image-container">
+  <div class="image-item">
+    <img src="./assets/images/consumerSS.jpg" alt="Screenshot 1" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/consumerSS3.jpg" alt="Screenshot 2" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/consumerSS2.jpg" alt="Screenshot 3" class="screenshot">
+  </div>
+</div>`
+    } else {
+      desElement.innerHTML = `
+       
+        <ul>
+        <li>Payu Money payment gateway integration</li>
+        <li>Google Maps integration</li>
+        <li>User-friendly interface</li>
+        <li>Geo-location services</li>
+      </ul>`;
+      ss.innerHTML =`<div class="image-container">
+  <div class="image-item">
+    <img src="./assets/images/deliverySS3.jpg" alt="Screenshot 1" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/deliverySS2.jpg" alt="Screenshot 2" class="screenshot">
+  </div>
+  <div class="image-item">
+    <img src="./assets/images/deliverySS.jpg" alt="Screenshot 3" class="screenshot">
+  </div>
+</div>`
+    }
+  } else {
+    console.error('Element with id "des" not found');
+  }
+});
+  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/flutter logo.png">
+  <link href="./assets/images/flutter logo.png" rel="icon">
+
+  <title>My works</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <!-- <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">01 : Home</a></li>
+          <li><a href="./works.html" title="">02 : Works</a></li>
+          <li><a href="./about.html" title="">03 : About me</a></li>
+          <li><a href="./contact.html" title="">04 : Contact</a></li>
+        </ul> -->
+
+
+          <!-- <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a href="./index.html" title="" class="active">001</a></li>
+            <li><a href="./index.html" title="">002</a></li>
+            <li><a href="./index.html" title="">003</a></li>
+            <li><a href="./index.html" title="">004</a></li>
+            <li><a href="./index.html" title="">005</a></li>
+            <li><a href="./index.html" title="">006</a></li>
+          </ul> -->
+
+
+      </div> 
+
+    </div>
+  </nav>
+</header>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="imageContainer">
+          <img id="pro-topImage" src="" class="img-responsive" alt="Project Image" />
+        </div>
+        
+        <div class="card-container">
+          <div class="text-center">
+            <div id="project-info">
+              <h1 id="project-title"></h1>
+              <p>Project Number: <span id="project-number"></span></p>
+            </div>
+            <!-- <h1 class="h2"idzyuvv='project-number'>001 : Fringilla sit amet</h1> -->
+          </div>
+          <!-- <p id="project-description">
+
+          </p> -->
+          <div id="des">
+
+          </div>
+          <div id="screenshot">
+
+          </div>
+          <!-- <blockquote>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+            <small class="pull-right">Irina Martin</small>
+          </blockquote> -->
+        </div>
+      </div>
+
+      
+      
+      <!-- <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="./assets/images/work001-02.jpg" class="img-responsive" alt="">
+            <p>Menphis skyline</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img src="./assets/images/work001-03.jpg" class="img-responsive" alt="">
+            <p>Menphis skyline</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="col-xs-12">
+        <img src="./assets/images/work001-04.jpg" class="img-responsive" alt="">
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+
+<!-- <footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+<!-- <script>
+  var isSuccess = true; // You can change this to false to see the "error" message
+
+  // Conditional logic with if-else
+  if (isSuccess) {
+   
+  } else {
+    document.getElementById('des').innerHTML = "<p class='error'>There was an error in the operation!</p>";
+  }
+</script> -->
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
